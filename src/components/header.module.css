@@ -1,0 +1,25 @@
+.header{
+  display: flex;
+  margin:0 var(--side-margin);
+  gap:40px;
+  padding:16px 0px;
+  animation-name:slide-in-top;
+  animation-duration:1s;
+}
+.links{
+  text-decoration: none;
+  color:#0AA0D0;
+  font-size:1rem;
+  font-family:sans-serif
+}
+.home{
+  margin-right:auto;
+}
+@keyframes slide-in-top{
+  from{
+    transform:translateY(-100%)
+  }
+  to{
+    transform:translateY(0%)
+  }
+}/*font import for roboto*/
