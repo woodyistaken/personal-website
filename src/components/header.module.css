@@ -1,16 +1,37 @@
 .header{
   display: flex;
-  margin:0 var(--side-margin);
   gap:40px;
-  padding:16px 0px;
+  padding:16px var(--side-padding);
   animation-name:slide-in-top;
   animation-duration:1s;
+  animation-delay:1s;
+  animation-fill-mode:forwards;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  width:100%;
+  z-index: 1;
+  transform:translateY(-100%);
+  background-color: white;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+.headerTop{
+  background-color: rgba(255, 255, 255, 0);
+}
+.headerBottom{
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .links{
   text-decoration: none;
-  color:#0AA0D0;
   font-size:1rem;
-  font-family:sans-serif
+}
+.linksTop{
+  color:white
+}
+.linksBottom{
+  color:#0AA0D0;
 }
 .home{
   margin-right:auto;
@@ -22,4 +43,4 @@
   to{
     transform:translateY(0%)
   }
-}/*font import for roboto*/
+}
