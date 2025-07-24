@@ -1,0 +1,51 @@
+.container{
+  padding:0px var(--side-padding);
+  background-color:darkblue;
+  animation-name:slide-in-bottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  position: relative;
+  transform:translateY(100vh);
+  padding-top:100px;
+  height:100vh;
+}
+.name{
+  padding:20px 0px;
+  color:rgb(79, 211, 255);
+  font-size:3rem;
+}
+.intro{
+  color:white;
+  font-size:1.5rem;
+  padding-right:20%;
+  line-height: 2.2rem;
+  font-family:serif;
+}
+.linkContainer{
+  margin-top:20px;
+}
+.links{
+  color:white;
+  margin:20px;
+  margin-left:0px;
+  font-size:1.4rem;
+  font-family:serif;
+  text-decoration: none;
+  border-bottom:1px solid white;
+}
+.links:hover{
+  color:rgb(202, 202, 202);
+  border-bottom:1px solid rgb(202, 202, 202);
+}
+
+@keyframes slide-in-bottom{
+  from{
+    opacity:0;
+    transform:translateY(100vh);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}

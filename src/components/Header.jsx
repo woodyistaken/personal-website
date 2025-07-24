@@ -1,4 +1,4 @@
-import style from './header.module.css'
+import style from './Header.module.css'
 import { useState,useEffect} from 'react'
 
 export default function Header(){
@@ -10,11 +10,10 @@ export default function Header(){
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
-  console.log(scrolled>240)
   return <nav className={`${style.header} ${scrolled>240?style.headerBottom:style.headerTop}`}>
     <a href="" className={`${style.home} ${style.links} ${scrolled>240?style.linksBottom:style.linksTop}`}>Welcome</a>
-    <a href="#projects" className={`${style.links} ${scrolled>240?style.linksBottom:style.linksTop}`}>Projects</a>
-    <a href="#about" className={`${style.links} ${scrolled>240?style.linksBottom:style.linksTop}`}>About</a>
-    <a href="#contact" className={`${style.links} ${scrolled>240?style.linksBottom:style.linksTop}`}>Contact</a>
+    <a href="#Projects" className={`${style.links} ${scrolled>240?style.linksBottom:style.linksTop}`}>Projects</a>
+    <a href="#About" className={`${style.links} ${scrolled>240?style.linksBottom:style.linksTop}`}>About</a>
+    <a href="#Contact" className={`${style.links} ${scrolled>240?style.linksBottom:style.linksTop}`}>Contact</a>
   </nav>
 }

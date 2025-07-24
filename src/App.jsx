@@ -1,14 +1,20 @@
-import { useState } from 'react'
-import Header from './components/header'
-import Top from './components/top'
+import { useEffect } from 'react'
+import Header from './components/Header'
+import Top from './components/Top'
+import Main from './components/Main'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  useEffect(()=>{
+      if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'manual';
+      }
+      window.scrollTo(0, 0);
+    })
   return (
     <>
       <Header/>
       <Top/>
+      <Main/>
     </>
   )
 }

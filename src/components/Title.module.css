@@ -1,0 +1,18 @@
+
+.container{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top:60px;
+  margin-bottom:50px;
+}
+.title{
+  font-size:1.5rem;
+  font-weight:normal;
+}
+.underline{
+  border-bottom:3px solid blue;
+  height:15px;
+  width:50px;
+}
