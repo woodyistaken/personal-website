@@ -21,7 +21,8 @@
   background-color: rgba(255, 255, 255, 0);
 }
 .headerBottom{
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.541);
 }
 .links{
   text-decoration: none;

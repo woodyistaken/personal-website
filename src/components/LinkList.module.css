@@ -1,0 +1,16 @@
+.list{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  gap:15px;
+}
+.links{
+  text-decoration: none;
+  font-size:1.2rem;
+  border-bottom:1px solid lightblue;
+  color:rgb(56, 205, 255);
+  padding-bottom:3px;
+}
+.links:hover{
+  border-bottom:1px solid rgb(56, 205, 255);
+}
